@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header{
+            background-color: #4caf50;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        header img{
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 4px solid white;
+            margin-bottom: 10px;
+        }
+        nav{
+           background-color: #e3f2fd;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding:  0px;
+            margin: auto;
+            width: 1000px;
+           
+        }
+        nav a{
+            color: black;
+            padding: 14px 20px;
+            text-decoration: none;
+            text-align: center;
+            transition: background-color 0.3s,color 0.3s;
+            font-weight:bold;
+        }
+        nav a:hover{
+            background-color: #4caf50;
+            color:red;
+            
+            
+        }
+        section{
+            padding: 20px;
+            max-width: 800px;
+            margin: auto;
+        }
+        .projects{
+            display: grid;
+            grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+            gap: 15px;
+        }
+        .project{
+            background-color: #e3f2fd;
+            padding: 15px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="myphoto.jpg" alt="My Photo"/>
+        <h1>Swarna Rekha Abburi</h1>
+        <p>Full Stack Developer and UI Designer</p>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Projects">Projects</a>
+        <a href="#Contact">Contact</a>
+    </nav>
+    <section id="About">
+        <h2>About Me</h2>
+        <p>I am a passionate frontend developer with a love for clean UI and user-centered design</p>
+        <p>I completed my Full Stack course in Java.</p>
+        <p>I Hold My Bachelors Degree in Electrical and Electronics from VVIT College</p>
+    </section>
+    <section id="Projects">
+        <h2>Projects</h2>
+        <div class="Projects">
+            <div class="project">
+                <h2>Portfolio website</h2>
+                <p>personal Portfolio built using html and css</p>
+
+            </div>
+            <div class="project">
+                <h2>animation</h2>
+                <p>I created animation using html and css</p>
+            </div>
+           
+        </div>
+    </section>
+    <section id="Contact">
+        <h2>Contact</h2>
+        <p>Email:abburiswarna@gmail.com</p>
+        <p>+91 9177514985</p>
+
+    </section>
+    
+</body>
+</html>
